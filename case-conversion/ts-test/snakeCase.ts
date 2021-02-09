@@ -1,7 +1,7 @@
-function snakeCase(str: string): string {
+function snakeCase(str: String): String {
   const arr: Array<String> = str.split("");
-  let newStr: string = arr[0].toLowerCase();
-  for (let i = 1; i < arr.length; i++) {
+  let newStr: String = arr[0].toLowerCase();
+  for (let i: number = 1; i < arr.length; i++) {
     if (arr[i] === arr[i].toUpperCase()) {
       newStr += "_"
     }
